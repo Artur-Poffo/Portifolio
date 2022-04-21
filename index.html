@@ -10,6 +10,23 @@
 </head>
 <body>
 
+    <input type="checkbox" name="check-menu" id="check-menu-burguer">
+
+    <label for="check-menu-burguer" class="menu-label">
+        <div class="menu">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+    </label>
+
+    <ul class="mobile-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#conhecimento">Conhecimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -76,10 +93,10 @@
         <div class="container">
             <div class="title">
                 <h1>Conhecimentos:</h1>
-                <h2>Principais Conhecimentos:</h2>
+                <h2>Principais <br> Conhecimentos:</h2>
             </div>
             <div class="conhecimento">
-                <a href="https://storyset.com/people"><img src="./img/animate.svg" class="animate" alt="Animação"></a>
+                <img src="./img/animate.svg" class="animate" alt="Animação">
                 <div class="list">
                     <ul>
                         <li>
@@ -121,15 +138,15 @@
                 <h3>Entre em Contato:</h3>
                 <div class="textfield">
                     <label for="name">Nome:</label>
-                    <input type="text" name="name">
+                    <input placeholder="Digite seu nome aqui..." type="text" name="name">
                 </div>
                 <div class="textfield">
                     <label for="email">Email:</label>
-                    <input type="email" name="email">
+                    <input placeholder="Digite seu email aqui..." type="email" name="email">
                 </div>
                 <div class="textfield">
                     <label for="mensagem">Mensagem:</label>
-                    <input type="text" name="mensagem" id="mensagem-contato">
+                    <input placeholder="Digite sua mensagem aqui..." type="text" name="mensagem" id="mensagem-contato">
                 </div>
                 <input type="submit" value="Enviar">
             </form>
@@ -137,7 +154,7 @@
     </section>
 
     <footer>
-        <a href="https://github.com/Artur-Poffo"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a id="github" href="https://github.com/Artur-Poffo"><i class="fa-brands fa-github fa-2x"></i></a>
         <a href="https://www.instagram.com/arturpoffodev/"><i class="fa-brands fa-instagram fa-2x"></i></a>
         <a href="mailto:arturpoffop@gmail.com?"><i class="fa-solid fa-envelope fa-2x"></i></a>
     </footer>
