@@ -299,6 +299,30 @@ html {
     border-radius: 15px;
     cursor: pointer;
     background-color: #eee;
+    transition: all .3s;
+}
+
+.card input[type="submit"]:hover {
+    background-color: #aaa;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 160px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#contato p {
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    background-color: #273036;
+    padding: 10px;
+    max-width: 400px;
+    text-align: center;
 }
 
 footer {
@@ -366,6 +390,10 @@ footer i:hover {
 }
 
 @media (max-width: 552px) {
+    #home {
+        background-attachment: scroll;
+    }
+    
     .navbar {
         display: none;
     }
