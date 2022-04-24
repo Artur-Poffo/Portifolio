@@ -21,10 +21,6 @@ html {
     display: none;
 }
 
-.navbar a {
-    color: black;
-}
-
 .navbar {
     width: 100%;
     position: fixed;
@@ -33,6 +29,10 @@ html {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     transition: all .3s ease-in-out;
+}
+
+.navbar a {
+    color: black;
 }
 
 .navbar ul {
@@ -236,6 +236,86 @@ html {
     align-items: center;
 }
 
+#projetos {
+    background-color: #273036;
+    padding: 50px;
+}
+
+#projetos h1 {
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+#projetos p {
+    color: rgb(182, 104, 255);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.animateproject {
+    width: 700px;
+    height: 700px;
+    margin-right: 30px;
+    float: right;
+}
+
+.projectcontent {
+    width: 932px;
+    height: 455px;
+    border-radius: 5px;
+    box-shadow: 25px 25px 400px #0c0c0c;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.projectcontent:hover {
+    box-shadow: 25px 25px 400px rgb(107, 0, 207);
+    border: 1px solid rgb(107, 0, 207);
+}
+
+.slides input[type = "radio"] {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 25%;
+    overflow: hidden;
+    transition: .6s;
+}
+
+#radio1:checked ~ #s1 {
+    margin-left: 0;
+}
+
+#radio2:checked ~ #s1 {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ #s1 {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ #s1 {
+    margin-left: -75%;
+}
+
 #contato {
     position: relative;
     height: 950px;
@@ -387,9 +467,33 @@ footer i:hover {
         align-items: center;
         text-align: center;
     }
+
+    .projectcontent {
+        width: 600px;
+        height: 300px; 
+    }
+
+    .animateproject {
+        width: 500px;
+        height: 500px;
+        margin: 20px 0px;
+        float: right;
+    }
 }
 
-@media (max-width: 552px) {
+@media (max-width: 940px) {
+    .projectcontent {
+        width: 450px;
+        height: 250px;
+    }
+
+    .animateproject {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 625px) {
     #home {
         background-attachment: scroll;
     }
@@ -471,6 +575,18 @@ footer i:hover {
         position: absolute;
         transform: rotate(90deg);
         bottom: 10;
+    }
+
+    .projectcontent {
+        width: 100%;
+        height: 170px;
+        margin: 0;
+    }
+
+    .animateproject {
+        width: 200px;
+        height: 200px;
+        float: none;
     }
 
 }

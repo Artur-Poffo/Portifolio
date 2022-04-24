@@ -1,4 +1,21 @@
 const nav = document.querySelector('.navbar')
+let contador = 1
+
+// CARROSEL DE IMAGENS - SECTION PROJETOS
+
+setInterval(function() {
+    document.querySelector('#radio' + contador).checked = true
+    contador ++
+    
+    if(contador > 4) {
+        contador = 1
+    }
+
+}, 3000)
+
+// FIM CARROSEL
+
+// NAVBAR ANIMAÇÃO:
 
 window.addEventListener("scroll", () => {
     if(window.scrollY >=3) {
@@ -7,3 +24,6 @@ window.addEventListener("scroll", () => {
         nav.classList.remove('scrolled')
     }
 })
+
+// FIM NAVBAR ANIMAÇÃO
+

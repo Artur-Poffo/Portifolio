@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1c241c6a24.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
     <title>Portifólio</title>
 </head>
 <body>
@@ -21,18 +22,20 @@
     </label>
 
     <ul class="mobile-list">
-        <li><a class="link-mobile-menu" href="#home">Home</a></li>
-        <li><a class="link-mobile-menu" href="#sobre">Sobre</a></li>
-        <li><a class="link-mobile-menu" href="#conhecimento">Conhecimentos</a></li>
-        <li><a class="link-mobile-menu" href="#contato">Contato</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#conhecimento">Conhecimentos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
     </ul>
 
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#conhecimento">Conhecimentos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a class="navlink" href="#home">Home</a></li>
+            <li><a class="navlink" href="#sobre">Sobre</a></li>
+            <li><a class="navlink" href="#conhecimento">Conhecimentos</a></li>
+            <li><a class="navlink" href="#projetos">Projetos</a></li>
+            <li><a class="navlink" href="#contato">Contato</a></li>
         </ul>
     </nav>
 
@@ -133,6 +136,50 @@
 
     </section>
 
+    <section id="projetos">
+
+        <div class="title">
+            <h1>Projetos:</h1>
+        </div>
+
+        <a href="https://github.com/Artur-Poffo">
+            <div class="projectcontent">
+
+                <div class="slides">
+    
+                    <input type="radio" name="radio" id="radio1" checked>
+                    <input type="radio" name="radio" id="radio2">
+                    <input type="radio" name="radio" id="radio3">
+                    <input type="radio" name="radio" id="radio4">
+        
+                    <div class="slide s1" id="s1">
+                        <img src="./img/sol.png" alt="Print site">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./img/home.jpg" alt="Print site">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./img/sol.png" alt="Print site">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./img/home.jpg" alt="Print site">
+                    </div>
+        
+                </div>
+    
+            </div>
+
+        </a>
+
+        <p>Selecione as imagens para ser redirecionado para meu GitHub, onde poderá encontrar todos esses projetos</p>
+
+        <img class="animateproject" src="./img/project.svg" alt="Animação">
+
+    </section>
+
     <section id="contato">
         <div class="card">
             <form action="" class="form">
@@ -165,6 +212,5 @@
         <a href="mailto:arturpoffop@gmail.com?"><i class="fa-solid fa-envelope fa-2x"></i></a>
     </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
