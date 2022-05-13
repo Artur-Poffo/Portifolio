@@ -8,3 +8,36 @@ mod_gzip_item_include mime ^application/x-javascript.*
 mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
 </ifModule>
+
+< IfModule  mod_expires.c >
+  Expira Ativo em
+
+ # Images 
+  ExpiresByType image/jpeg  "access plus 1 year" 
+  ExpiresByType image/gif  "access plus 1 year" 
+  ExpiresByType image/png  "access plus 1 year" 
+  ExpiresByType image/webp  "access plus 1 year" 
+  ExpiresByType image/svg+xml  "access mais 1 ano" 
+  ExpiresByType imagem/ícone x  "acesso mais 1 ano"
+
+  # Video 
+  ExpiresByType video/webm  "acesso mais 1 ano" 
+  ExpiresByType video/mp4  "acesso mais 1 ano" 
+  ExpiresByType video/mpeg  "acesso mais 1 ano"
+
+  # Fontes 
+  ExpiresByType font/ttf  "access plus 1 year" 
+  ExpiresByType font/otf  "access plus 1 year" 
+  ExpiresByType font/woff  "access plus 1 year" 
+  ExpiresByType font/woff2  "access plus 1 year" 
+  ExpiresByType application/font-woff  "access mais 1 ano"
+
+  # CSS, JavaScript 
+  ExpiresByType text/css  "access plus 1 year" 
+  ExpiresByType text/javascript  "access plus 1 year" 
+  ExpiresByType application/javascript  "access plus 1 year"
+
+  # Outros 
+  ExpiresByType application/pdf  "acesso mais 1 ano" 
+  ExpiresByType image/vnd.microsoft.icon  "acesso mais 1 ano" 
+</ IfModule >
