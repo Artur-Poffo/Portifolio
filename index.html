@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,800&display=swap"
       rel="stylesheet"
@@ -113,6 +114,7 @@
             src="./img/animate.svg"
             class="animate"
             alt="Animação"
+            data-aos="fade-right"
           />
           <div class="list">
             <ul>
@@ -191,6 +193,7 @@
         src="./img/project.svg"
         alt="Animação"
         loading="lazy"
+        data-aos="zoom-in-down"
       />
     </section>
 
@@ -246,5 +249,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>
