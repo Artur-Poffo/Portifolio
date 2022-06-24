@@ -191,7 +191,7 @@ html {
 
 .container {
     padding: 50px;
-    background-color: #273036;
+    background-color: #13293d;
     overflow: hidden;
 }
 
@@ -235,7 +235,7 @@ html {
 }
 
 #projetos {
-    background-color: #273036;
+    background-color: #13293d;
     padding: 50px;
 }
 
@@ -396,7 +396,7 @@ html {
 #contato p {
     font-family: 'Poppins', sans-serif;
     color: #eee;
-    background-color: #273036;
+    background-color: rgb(26, 26, 26);
     padding: 10px;
     max-width: 400px;
     text-align: center;
@@ -418,12 +418,12 @@ footer {
 
 footer i {
     margin-left: 20px;
-    color: #273036;
+    color: #313131;
     transition: all .3s;
 }
 
 footer i:hover {
-    color: cadetblue;
+    color: rgb(36, 129, 134);
 }
 
 @media (max-width: 1418px) {
@@ -584,6 +584,10 @@ footer i:hover {
         width: 200px;
         height: 200px;
         float: none;
+    }
+
+    footer {
+        height: 40px;
     }
 
 }
