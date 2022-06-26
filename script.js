@@ -27,3 +27,16 @@ window.addEventListener("scroll", () => {
 
 // FIM NAVBAR ANIMAÇÃO
 
+//MENU
+
+let menu = document.getElementById('menu')
+
+menu.addEventListener('click', () => {
+    //OPEN MENU
+    document.getElementsByClassName('mobile-list')[0].classList.toggle('open')
+
+    //MUDAR .BAR    
+    menu.classList.toggle('change')
+
+})
+

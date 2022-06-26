@@ -21,22 +21,19 @@
     <title>Portifólio</title>
   </head>
   <body>
-    <input type="checkbox" name="check-menu" id="check-menu-burguer" />
 
-    <label for="check-menu-burguer" class="menu-label">
-      <div class="menu">
+      <div id="menu" class="menu">
         <div class="bar" id="bar1"></div>
         <div class="bar" id="bar2"></div>
         <div class="bar" id="bar3"></div>
       </div>
-    </label>
 
     <ul class="mobile-list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#conhecimento">Conhecimentos</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a onclick="exit()" href="#home">Home</a></li>
+      <li><a onclick="exit()" href="#sobre">Sobre</a></li>
+      <li><a onclick="exit()" href="#conhecimento">Conhecimentos</a></li>
+      <li><a onclick="exit()" href="#projetos">Projetos</a></li>
+      <li><a onclick="exit()" href="#contato">Contato</a></li>
     </ul>
 
     <nav class="navbar">
@@ -252,9 +249,16 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      
       AOS.init({
         duration: 1000
       });
+
+      function exit() {
+        document.getElementsByClassName('mobile-list')[0].classList.remove('open')
+        document.getElementById('menu').classList.remove('change')
+      }
+
     </script>
   </body>
 </html>
