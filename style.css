@@ -150,7 +150,6 @@ html {
 .right p {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    /* text-align: justify; */
     overflow: hidden;
 }
 
@@ -217,6 +216,27 @@ html {
 
 #html-icon {
     margin-left: 0;
+}
+
+.wave-container img {
+   background-color: #eee;
+   position: absolute;
+   top: 0;
+}
+
+#conhecimento {
+    background-color: #13293d;
+    position: relative;
+}
+
+#conhecimento h1, h2 {
+    z-index: 2;
+    color: #eee;
+}
+
+.container {
+    margin: 10rem;
+    z-index: 3;
 }
 
 .animate {
@@ -484,6 +504,10 @@ footer i:hover {
     .animateproject {
         width: 400px;
         height: 400px;
+    }
+
+    .container {
+        margin: 0;
     }
 }
 

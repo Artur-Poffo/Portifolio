@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
 
 // FIM NAVBAR ANIMAÇÃO
 
-//MENU
+//MENU-MOBILE
 
 let menu = document.getElementById('menu')
 
