@@ -29,11 +29,11 @@
       </div>
 
     <ul class="mobile-list">
-      <li><a onclick="exit()" href="#home">Home</a></li>
-      <li><a onclick="exit()" href="#sobre">Sobre</a></li>
-      <li><a onclick="exit()" href="#conhecimento">Conhecimentos</a></li>
-      <li><a onclick="exit()" href="#projetos">Projetos</a></li>
-      <li><a onclick="exit()" href="#contato">Contato</a></li>
+      <li><a onclick="exit()" class="link-mobile" href="#home">Home</a></li>
+      <li><a onclick="exit()" class="link-mobile" href="#sobre">Sobre</a></li>
+      <li><a onclick="exit()" class="link-mobile" href="#conhecimento">Conhecimentos</a></li>
+      <li><a onclick="exit()" class="link-mobile" href="#projetos">Projetos</a></li>
+      <li><a onclick="exit()" class="link-mobile" href="#contato">Contato</a></li>
     </ul>
 
     <nav class="navbar">
@@ -94,12 +94,14 @@
       </div>
       <br />
     </section>
+
     <section id="conhecimento">
     <div class="wave-container">
       <img src="./img/wave.svg">
     </div>
+    </div>
       <div class="container">
-        <div class="title">
+        <div class="title2">
           <h1>Conhecimentos:</h1>
           <h2>
             Principais <br />
@@ -150,50 +152,24 @@
     </section>
 
     <section id="projetos">
+
       <div class="title">
         <h1>Projetos:</h1>
       </div>
 
-      <a href="https://github.com/Artur-Poffo">
-        <div class="projectcontent">
-          <div class="slides">
-            <input type="radio" name="radio" id="radio1" checked />
-            <input type="radio" name="radio" id="radio2" />
-            <input type="radio" name="radio" id="radio3" />
-            <input type="radio" name="radio" id="radio4" />
-
-            <div class="slide s1" id="s1">
-              <img src="./img/sol.png" alt="Print site" loading="lazy" />
-            </div>
-
-            <div class="slide">
-              <img src="./img/home.jpg" alt="Print site" loading="lazy" />
-            </div>
-
-            <div class="slide">
-              <img src="./img/sol.png" alt="Print site" loading="lazy" />
-            </div>
-
-            <div class="slide">
-              <img src="./img/home.jpg" alt="Print site" loading="lazy" />
+      <div id="container-project">
+        <div class="cards-project">
+          <div class="infocardscont">
+            <div class="infocards">
+              <h3>Nome do projeto:</h3>
+              <h5>Tecnologias</h5>
+              <hr>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dicta corrupti eligendi labore eos doloribus similique, expedita ducimus illo iste quod cum quaerat molestiae impedit unde, tempore rem officiis eius.</p>
             </div>
           </div>
         </div>
-      </a>
-
-      <p>
-        Selecione as imagens para ser redirecionado para meu GitHub, onde poderá
-        encontrar todos esses projetos
-      </p>
-
-      <img
-        class="animateproject"
-        src="./img/project.svg"
-        alt="Animação"
-        loading="lazy"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      />
+      </div>
+       <p style="color: rgb(0, 153, 255); z-index: 2">EM OBRA...</p>
     </section>
 
     <section id="contato">
