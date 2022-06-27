@@ -266,7 +266,6 @@ html {
 #projetos {
     background-color: #272727;
     padding: 20px;
-    overflow-y: hidden;
 }
 
 #projetos h1 {
@@ -280,54 +279,75 @@ html {
 }
 
 #container-project {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 20px;
 }
 
 .cards-project {
-    width: 25rem;
-    height: 15rem;
-    border-radius: 5px;
-    background-image: url(./img/home.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 20rem;
+    height: 30rem;
+    background-color: #272727;
     position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.infocardscont{
-    width: 100%;
-    height: 100%;
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #43ABCD;
-    position: absolute;
-    top: -100%;
-    transition: all 1s ease;
+    box-shadow: 20px 20px 30px black;
+    transition: all .4s ease-in-out;
+    margin: 60px 30px;
 }
 
-.infocards {
-    font-size: .8em;
-    margin: 10px;
+.cards-project:hover {
+    box-shadow: none;
 }
 
-.infocards hr {
+.imageproject{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #5E3EA1;
+    border: 3px solid #fff;
+    padding: 10px;
+    transition: all 1s;
+    margin-bottom: 10px;
+}
+
+.imageproject:hover {
+    padding: 0;
+}
+
+.cards-project h3, h5 {
+    text-transform: uppercase;
+    color: #5E3EA1;
+}
+
+.cards-project hr {
     width: 100%;
-    height: 3px;
-    background-color: #43A3CD;
-    border: none;
+    border-color: #5E3EA1;
+    margin-bottom: 10px;
 }
 
-.hideinfo {
-    top: 0px;
+.cards-project p {
+    color: #eee;
+    margin-bottom: 10px;
 }
 
+.cards-project a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 2rem;
+    background-color: #5E3EA1;
+    color: #eee;
+    border-radius: 2px;
+    transition: all .4s;
+}
 
+.cards-project a:hover {
+    background-color: #4b3181;
+}
 
 #contato {
     position: relative;
@@ -442,6 +462,21 @@ footer i:hover {
     color: rgb(36, 129, 134);
 }
 
+@media (max-width: 1640px) {
+    #container-project {
+        flex-direction: column;
+    }
+
+    #projetos {
+        padding: 0;
+    }
+
+    .cards-project {
+        width: 26rem;
+        height: 32rem;
+    }
+}
+
 @media (max-width: 1418px) {
     .btn {
         background-image: none;
@@ -492,6 +527,11 @@ footer i:hover {
         margin: 20px 0px;
         float: right;
     }
+
+    .cards-project {
+        width: 26rem;
+        height: 32rem;
+    }
 }
 
 @media (max-width: 940px) {
@@ -507,6 +547,11 @@ footer i:hover {
 
     .container {
         margin: 0;
+    }
+
+    .cards-project {
+        width: 16rem;
+        height: 32rem;
     }
 }
 
@@ -535,6 +580,10 @@ footer i:hover {
         z-index: 12;
         transition: all .7s ease;
         animation: salt 1.6s infinite;
+    }
+
+    .container {
+        padding: 0;
     }
 
     @keyframes salt {

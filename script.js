@@ -26,16 +26,3 @@ menu.addEventListener("click", () => {
 });
 
 //FIM MENU MOBILE
-
-//CARDS PROJECT
-
-let cards = document.getElementsByClassName("cards-project")[0];
-let cardinfo = document.getElementsByClassName("infocardscont")[0];
-
-cards.onmouseenter = () => {
-    cardinfo.classList.add('hideinfo')
-}
-
-cards.onmouseleave = () => {
-    cardinfo.classList.remove('hideinfo')
-}
