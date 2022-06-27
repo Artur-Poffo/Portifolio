@@ -596,20 +596,6 @@ footer i:hover {
         color: #43A3CD;
     }
 
-    .open .link-mobile {
-        animation: fader 1.4s ease;
-    }
-
-    @keyframes fader {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
     .bar {
         width: 20px;
         height: 2px;
